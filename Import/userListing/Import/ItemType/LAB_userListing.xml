@@ -1,0 +1,45 @@
+﻿<AML>
+ <Item type="ItemType" id="90B5D85E220F40A6A69F513495FD4E89" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <implementation_type>table</implementation_type>
+  <instance_data>LAB_USERLISTING</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <label xml:lang="en">Users Listing</label>
+  <label_plural xml:lang="en">Users Listing</label_plural>
+  <open_icon>../Images/Group.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs off</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>LAB_userListing</name>
+  <Relationships>
+   <Item type="TOC Access" id="84287145B4814B96BBCD804C633FF4B8" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="LAB_userListing" type="ItemType" name="LAB_userListing">90B5D85E220F40A6A69F513495FD4E89</source_id>
+   </Item>
+   <Item type="TOC View" id="84FD5FF1A610470E87471C68CCAA8ABA" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="LAB_userListing" type="ItemType" name="LAB_userListing">90B5D85E220F40A6A69F513495FD4E89</source_id>
+    <start_page>userListing/index.html</start_page>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="View" action="delete" where="source_id='90B5D85E220F40A6A69F513495FD4E89'" />
+ <Item type="Form" action="delete" where="name='LAB_userListing'" />
+</AML>

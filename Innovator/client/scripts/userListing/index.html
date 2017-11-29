@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+
+<script type="text/javascript">
+angular.module('userListing', [])
+    .controller('users',  ($scope, $document) =>{
+        var aras = top.aras;
+        var arastop = top;
+        var inn = top.aras.IomInnovator;
+	
+        $(document).ready( ()=> {
+        });
+
+        var updateConfiguration = (configurationName) =>{
+
+        }
+
+
+        //////////////////////////////////////////////////////////////
+        // config types in the first dropdown list
+        //////////////////////////////////////////////////////////////
+
+        $scope.users = []
+		
+        var users = inn.newItem("user", "get");
+        users = users.apply();
+
+        for (var i = 0; i < users.getItemCount(); i++) {
+            var user = users.getItemByIndex(i);
+			console.log(user.getProperty("picture","-"))
+			if (user.getProperty("picture","-") != "-"){
+			console.log(user.getProperty("picture","").split("fileId=")[1])
+			console.log(inn.getFileUrl(user.getProperty("picture","").split("fileId=")[1]),aras.Enums.UrlType.SecurityToken)
+			}
+			var picture = user.getProperty("picture","") ===""?"nopic.png": aras.IomInnovator.getFileUrl(user.getProperty("picture","").split("fileId=")[1],aras.Enums.UrlType.SecurityToken)
+			var userObj = {
+				firstName :user.getProperty("first_name",""),
+				lastName :user.getProperty("last_name",""),
+				job:"",
+				email:user.getProperty("email","no email"),
+				telephone: user.getProperty("telephone","xxx-xxx-xxxx"),
+				pict:picture,
+				id:user.getID()
+			}
+			if (user.getProperty("logon_enabled","0")==="1"){
+			userObj.isActive = true
+			}else {
+			userObj.isActive = false
+			}
+			$scope.users.push(userObj)
+        }
+console.log($scope.users)
+
+$scope.addNew = ()=>{
+}
+
+$scope.openUser = (id)=>{
+
+		top.aras.uiShowItem("user", id);
+}
+
+    })
+
+
+</script>
+
+<body ng-app="userListing" ng-controller="users">
+  <div class="row container" style="margin-top:10px;">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">face</i>
+          <input type="text" ng-model="searchName" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Search a Colleague</label>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div id="userListing" class="row" >
+		<div class="col l2 m4 s6" ng-repeat="user in users | filter:searchName">
+			<div class="card  darken-1" ng-class="{ 'blue-grey':user.isActive, 'grey': !user.isActive}">
+			<div class="card-image">
+					  <img ng-src="{{user.pict}}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+					<span class="card-title">{{user.firstName}} {{user.lastName}}</span>
+            </div>
+				<div class="card-content white-text">
+					  <span class="black-text">
+						{{user.email}} <br>
+						{{user.telephone}} 
+					  </span>
+				</div>
+				<div class="card-action">
+					<a href="#" ng-click="openUser(user.id)">Open</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>
