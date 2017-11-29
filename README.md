@@ -1,5 +1,8 @@
 # Visual User Listing
 Adds a user interface to quickly browse and filter the list of your colleagues
+
+![Listing Wide view](./screenshots/userListingWide.PNG)
+
 #### How it works
 The Visual User Listing is a simple example of how you can integrate dynamic web pages using alternative Js framework like AngularJs in this case. Even if the best option might be to excel at Dojo.js, we know that more developers are using frameworks like vue.js, angular, angularJs, React,... 
 
@@ -46,9 +49,6 @@ You are now ready to login to Aras and try out kanban-like task management
 1. Log in to Aras as admin.
 2. Navigate to Users Listing at the end of the table of contents (TOC).
 3. Users are now listed and you can test some searches
-
-![Listing Wide view](./screenshots/userListingWide.PNG)
-
 
 
 ![Listing smaller responsive view](./screenshots/userListingSmall.PNG)
