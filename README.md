@@ -24,9 +24,9 @@ This project lists users but it would be very easy to adapt it for any other ite
 ### Pre-requisites
 
 1. Aras Innovator installed (version 11.0 SPx preferred)
-2. Aras Package Import tool
+2. Aras Package Import tool.
 
-### Install Steps
+### Installation Steps
 
 1. Backup your database and store the BAK file in a safe place.
 2. Open up the Aras Package Import tool.
@@ -48,7 +48,7 @@ You are now ready to login to Aras and try out kanban-like task management
 
 1. Log in to Aras as admin.
 2. Navigate to Users Listing at the end of the table of contents (TOC).
-3. Users are now listed and you can test some searches
+3. Users are now listed and you can test some searches.
 
 
 ![Listing smaller responsive view](./screenshots/userListingSmall.PNG)
@@ -65,7 +65,7 @@ You are now ready to login to Aras and try out kanban-like task management
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request
+5. Submit a pull request.
 
 For more information on contributing to this project, another Aras Labs project, or any Aras Community project, shoot us an email at araslabs@aras.com.
 
