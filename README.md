@@ -6,7 +6,7 @@ Adds a user interface to quickly browse and filter the list of your colleagues
 #### How it works
 The Visual User Listing is a simple example of how you can integrate dynamic web pages using alternative Js framework like AngularJs in this case. Even if the best option might be to excel at Dojo.js, we know that more developers are using frameworks like vue.js, angular, angularJs, React,... 
 
-This project lists users but it would be very easy to adapt it for any other itemtype.
+This project lists users but it would be very easy to adapt it for any other item type.
 
 ## Project Details
 
