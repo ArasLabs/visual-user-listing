@@ -8,11 +8,19 @@ The Visual User Listing is a simple example of how you can integrate dynamic web
 
 This project lists users but it would be very easy to adapt it for any other itemtype.
 
-## Project Details
+## History
 
-**Built Using:** Aras 11.0 SP9
+Release | Notes
+--------|--------
+[v1.0.1](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Firefox 60 ESR, Chrome.
+[v1.0.0](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
-**Browsers Tested:** Internet Explorer 11, Firefox 38 ESR, Chrome
+#### Supported Aras Versions
+
+Project | Aras
+--------|------
+[v1.0.1](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
+[v1.0.0](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
 
 > Though built and tested using Aras 11.0 SP9, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
@@ -40,7 +48,7 @@ This project lists users but it would be very easy to adapt it for any other ite
 8. Click **Import** in the top left corner.
 9. Close the Aras Package Import tool.
 10. Copy `..\visual-user-listing\Innovator` in your install folder
-  * _Note: by default c:/Program Files/Aras/Innovator/
+  * _Note: by default c:/Program Files/Aras/Innovator/_
 
 You are now ready to login to Aras and try out kanban-like task management
 
