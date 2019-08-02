@@ -1,7 +1,7 @@
 # Visual User Listing
 Adds a user interface to quickly browse and filter the list of your colleagues
 
-![Listing Wide view](./screenshots/userListingWide.PNG)
+![Listing Wide view](./screenshots/12UL-wide.png)
 
 #### How it works
 The Visual User Listing is a simple example of how you can integrate dynamic web pages using alternative Js framework like AngularJs in this case. Even if the best option might be to excel at Dojo.js, we know that more developers are using frameworks like vue.js, angular, angularJs, React,... 
@@ -12,18 +12,16 @@ This project lists users but it would be very easy to adapt it for any other ite
 
 Release | Notes
 --------|--------
+[v1.0.2](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.2) | Screenshots updated for v12 
 [v1.0.1](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Internet Explorer, Firefox 60 ESR, Chrome.
 [v1.0.0](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. 
-> Though built and tested using Aras 11.0 SP9, this project should function in older releases of Aras 11.0 and Aras 10.0.
-
 #### Supported Aras Versions
 
 Project | Aras
 --------|------
+[v1.0.2](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.2) | 11.9+, 12.0+ 
 [v1.0.1](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.1) | 11.0 SP9+, 11.0 SP12+, 11.0 SP15
 [v1.0.0](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.0) | 11.0 SP9; Old Community Board Migration
-
-> Though built and tested using Aras 11.0 SP9, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
 ## Installation
 
@@ -32,7 +30,7 @@ Project | Aras
 
 ### Pre-requisites
 
-1. Aras Innovator installed (version 11.0 SPx preferred)
+1. Aras Innovator installed (version 12.0 preferred)
 2. Aras Package Import tool
 
 ### Install Steps
@@ -60,11 +58,11 @@ You are now ready to login to Aras and try out kanban-like task management
 3. Users are now listed and you can test some searches
 
 
-![Listing smaller responsive view](./screenshots/userListingSmall.PNG)
+![Listing smaller responsive view](./screenshots/12user_listing_small.png)
 
 
 
-![Listing filtered](./screenshots/userListingFiltered.PNG)
+![Listing filtered](./screenshots/12user_listing_filtered.png)
 
 
 
