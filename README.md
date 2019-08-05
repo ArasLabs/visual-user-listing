@@ -19,7 +19,7 @@ Release | Notes
 
 Project | Aras
 --------|------
-[v1.0.2](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.2) | 11.9+, 12.0+ 
+[v1.0.2](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.2) | 11.0 SP9+, 12.0+ 
 [v1.0.1](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.1) | 11.0 SP9+, 11.0 SP12+, 11.0 SP15
 [v1.0.0](https://github.com/ArasLabs/visual-user-listing/releases/tag/v1.0.0) | 11.0 SP9; Old Community Board Migration
 
